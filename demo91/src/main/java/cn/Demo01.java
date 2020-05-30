@@ -9,7 +9,28 @@ public class Demo01 {
         System.out.println("你好，git");
     }
 
-    public void test1(){
-        System.out.println("修改添加的方法");
+    int man =0;
+    int gril = 0;
+    int child = 0;
+
+    public void test( int money){
+        if (money == 0){
+            System.out.println(man);
+        }
+        if( money % 5 == 0){
+            money = money - 5;
+            man++;
+            test(money);
+        }
+        if( money % 3 == 0){
+            money = money - 3;
+            gril++;
+            test(money);
+        }
+        if( money % 1 == 0){
+            money = money - 1;
+            child = child + 3;
+            test(money);
+        }
     }
 }
